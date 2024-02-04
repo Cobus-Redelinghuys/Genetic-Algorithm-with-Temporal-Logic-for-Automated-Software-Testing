@@ -1,10 +1,1 @@
-{
-    "results": [
-        {
-            "stdOut": "not a triangle\n",
-            "exitCode": 0,
-            "errOut": "",
-            "exeTime": 614
-        }
-    ]
-}
+{"results":[{"stdOut":"isosceles\n","exitCode":0,"errOut":"","exeTime":791}]}

@@ -1,27 +1,21 @@
 {
     "Genes": [
         {
-            "minValue": -15,
+            "minValue": -1,
             "maxValue": 15,
             "invalidValues": [
-                5,
-                10
             ]
         },
         {
-            "minValue": -15,
+            "minValue": -1,
             "maxValue": 15,
             "invalidValues": [
-                5,
-                10
             ]
         },
         {
-            "minValue": -15,
+            "minValue": -1,
             "maxValue": 15,
             "invalidValues": [
-                5,
-                10
             ]
         }
     ],
@@ -50,7 +44,7 @@
         "IllegalOutput": {
             "enabled" : true,
             "weight" : 1,
-            "words" : ["not"]
+            "words" : ["isosceles"]
         },
         "ExpectedOutput" : {
             "enabled" : false,
@@ -64,8 +58,8 @@
     "seed":0,
     "mutationType":"RandomInversion",
     "selectionSize":10,
-    "populationSize":100,
-    "numGenerations":100,
+    "populationSize":20,
+    "numGenerations":50,
     "crossOverType":"UniformedCrossOver",
     "mutationProp":0.5,
     "nCrossOver":5,

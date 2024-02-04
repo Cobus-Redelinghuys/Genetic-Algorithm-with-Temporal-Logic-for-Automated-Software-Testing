@@ -222,13 +222,13 @@ class InterpretorInstance extends Thread {
             error += (char) input;
             input = pro.getErrorStream().read();
         }
-        // System.out.println(error);
+        //System.out.println(error);
         input = pro.getInputStream().read();
         while (input != -1) {
             error += (char) input;
             input = pro.getInputStream().read();
         }
-         //System.out.println(error);
+        //System.out.println(error);
 
         pro.waitFor();
 
