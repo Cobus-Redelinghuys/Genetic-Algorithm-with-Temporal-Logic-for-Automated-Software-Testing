@@ -238,37 +238,25 @@ class InterpretorInstance extends Thread {
 }
 
 class InterpretorResults {
-    final String studentStdOut;
-    final String studentErrOut;
-    final String instructorStdOut;
-    final String instructorErrOut;
-    final long studentExeTime;
-    final long instructorExeTime;
+    final String stdOut;
+    final String errOut;
+    final long exeTime;
     final int studentExitCode;
-    final int instructorExitCode;
 
     InterpretorResults(JSONObject output) {
-        studentStdOut = (String) output.get("studentStdOut");
-        studentErrOut = (String) output.get("studentErrOut");
-        instructorStdOut = (String) output.get("instructorStdOut");
-        instructorErrOut = (String) output.get("instructorErrOut");
-        studentExeTime = (Long) output.get("studentExeTime");
-        instructorExeTime = (Long) output.get("instructorExeTime");
-        studentExitCode = ((Long) output.get("studentExitCode")).intValue();
-        instructorExitCode = ((Long) output.get("instructorExitCode")).intValue();
+        stdOut = (String) output.get("stdOut");
+        errOut = (String) output.get("errOut");
+        exeTime = (Long) output.get("exeTime");
+        studentExitCode = ((Long) output.get("exitCode")).intValue();
     }
 
     @SuppressWarnings("unchecked")
     JSONObject toJSON() {
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("studentStdOut", studentStdOut);
-        jsonObject.put("studentErrOut", studentErrOut);
-        jsonObject.put("instructorStdOut", instructorStdOut);
-        jsonObject.put("instructorErrOut", instructorErrOut);
-        jsonObject.put("studentExeTime", studentExeTime);
-        jsonObject.put("instructorExeTime", instructorExeTime);
-        jsonObject.put("studentExitCode", studentExitCode);
-        jsonObject.put("instructorExitCode", instructorExitCode);
+        jsonObject.put("stdOut", stdOut);
+        jsonObject.put("errOut", errOut);
+        jsonObject.put("exeTime", exeTime);
+        jsonObject.put("exitCode", studentExitCode);
         return jsonObject;
     }
 }

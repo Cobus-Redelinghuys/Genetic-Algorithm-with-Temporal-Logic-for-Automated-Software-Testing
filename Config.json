@@ -50,7 +50,7 @@
         "IllegalOutput": {
             "enabled" : true,
             "weight" : 1,
-            "words" : []
+            "words" : ["not"]
         },
         "ExpectedOutput" : {
             "enabled" : false,

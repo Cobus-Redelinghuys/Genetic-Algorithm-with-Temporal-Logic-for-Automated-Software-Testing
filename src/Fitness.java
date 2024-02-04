@@ -151,9 +151,9 @@ public class Fitness {
             return 0;
         }
         float result = 0;
-        if (!(output.studentErrOut.equals("") && output.studentErrOut.isEmpty())) {
+        if (!(output.errOut.equals("") && output.errOut.isEmpty())) {
             result += 1;
-        } else if (output.studentStdOut.toUpperCase().contains("EXCEPTION")) {
+        } else if (output.stdOut.toUpperCase().contains("EXCEPTION")) {
             result += 1;
         }
 
@@ -181,9 +181,9 @@ public class Fitness {
             return 0;
 
         float result = 0;
-        if (output.studentStdOut.toLowerCase().contains("segfault")
-                || output.studentStdOut.toLowerCase().contains("segmentation fault")
-                || output.studentExeTime == 139) {
+        if (output.stdOut.toLowerCase().contains("segfault")
+                || output.stdOut.toLowerCase().contains("segmentation fault")
+                || output.exeTime == 139) {
             result += 1;
         }
         result = (float) (FitnessConfig.SegFault.weight * result);
@@ -199,11 +199,11 @@ public class Fitness {
 
         float result = 0;
 
-        if (output.studentStdOut.toLowerCase().contains("exception")
-                || output.studentStdOut.toLowerCase().contains("exceptions")) {
+        if (output.stdOut.toLowerCase().contains("exception")
+                || output.stdOut.toLowerCase().contains("exceptions")) {
             result += 1;
-        } else if (output.studentStdOut.toLowerCase().contains("exception")
-                || output.studentStdOut.toLowerCase().contains("exceptions")) {
+        } else if (output.stdOut.toLowerCase().contains("exception")
+                || output.stdOut.toLowerCase().contains("exceptions")) {
             result += 1;
         }
 
@@ -217,7 +217,7 @@ public class Fitness {
 
         float result = 0;
 
-        if (output.studentExeTime > FitnessConfig.ExecutionTime.maxTime) {
+        if (output.exeTime > FitnessConfig.ExecutionTime.maxTime) {
             result += 1;
         }
         result = (float) FitnessConfig.ExecutionTime.weight * result;
@@ -234,7 +234,7 @@ public class Fitness {
         float result = 0;
 
         for (String word : FitnessConfig.IllegalOutput.words) {
-            if (output.studentStdOut.contains(word)) {
+            if (output.stdOut.contains(word)) {
                 result += 1;
             }
         }
