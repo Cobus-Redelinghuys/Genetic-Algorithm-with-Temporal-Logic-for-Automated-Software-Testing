@@ -1,0 +1,176 @@
+{
+  "GA": {
+    "filePath": "./Config.json",
+    "reproductionProp": {
+      "othervalues": [
+        0.0,
+        0.25,
+        0.75,
+        1.0
+      ],
+      "defaultValue": 0.5
+    },
+    "crossoverProp": {
+      "othervalues": [
+        0.0,
+        0.25,
+        0.75,
+        1.0
+      ],
+      "defaultValue": 0.5
+    },
+    "mutationType": {
+      "othervalues": [
+        "SingleBitInversion",
+        "RandomInversion"
+      ],
+      "defaultValue": "BitWiseInversion"
+    },
+    "populationSize": {
+      "othervalues": [
+        25,
+        75,
+        100,
+        125,
+        150
+      ],
+      "defaultValue": 50
+    },
+    "numGenerations": {
+      "othervalues": [
+        25,
+        75,
+        100,
+        150
+      ],
+      "defaultValue": 50
+    },
+    "crossOverType": {
+      "othervalues": [
+        "UniformedCrossOver",
+        "NPointCrossOver",
+        "SegmentedCrossOver"
+      ],
+      "defaultValue": "OnePointCrossOver"
+    },
+    "mutationProp": {
+      "othervalues": [
+        0.0,
+        0.25,
+        0.75,
+        1.0
+      ],
+      "defaultValue": 0.5
+    },
+    "selectionMethod": {
+      "othervalues": [
+        "RouletteSelection",
+        "StochasticUniversalSampling",
+        "ExponentialRankSelection",
+        "TruncationSelection",
+	"LinearRankSelection"
+      ],
+      "defaultValue": "TournamentSelection"
+    },
+    "tournamentSize": {
+      "othervalues": [
+        1,
+        5,
+        10
+      ],
+      "defaultValue": 2
+    },
+    "LTLWeight": {
+      "othervalues": [
+        0.0,
+        0.25,
+        0.75,
+        1.0
+      ],
+      "defaultValue": 0.5
+    },
+    "MWeight": {
+      "othervalues": [
+        0.0,
+        0.25,
+        0.75,
+        1.0
+      ],
+      "defaultValue": 0.5
+    },
+    "GWeight": {
+      "othervalues": [
+        0.0,
+        0.25,
+        0.75,
+        1.0
+      ],
+      "defaultValue": 0.5
+    },
+    "FitnessFunction": {
+      "Safety": {
+        "othervalues": [
+          0.0,
+          0.25,
+          0.75,
+          1.0
+        ],
+        "defaultValue": 0.5
+      },
+      "Livelyness": {
+        "othervalues": [
+          0.0,
+          0.25,
+          0.75,
+          1.0
+        ],
+        "defaultValue": 0.5
+      },
+      "SegFault": {
+        "othervalues": [
+          0.0,
+          0.25,
+          0.75,
+          1.0
+        ],
+        "defaultValue": 0.5
+      },
+      "Exceptions": {
+        "othervalues": [
+          0.0,
+          0.25,
+          0.75,
+          1.0
+        ],
+        "defaultValue": 0.5
+      },
+      "ExecutionTime": {
+        "othervalues": [
+          0.0,
+          0.25,
+          0.75,
+          1.0
+        ],
+        "defaultValue": 0.5
+      },
+      "IllegalOutput": {
+        "othervalues": [
+          0.0,
+          0.25,
+          0.75,
+          1.0
+        ],
+        "defaultValue": 0.5
+      },
+      "ExpectedOutput": {
+        "othervalues": [
+          0.0,
+          0.25,
+          0.75,
+          1.0
+        ],
+        "defaultValue": 0.5
+      }
+    }
+  }
+}

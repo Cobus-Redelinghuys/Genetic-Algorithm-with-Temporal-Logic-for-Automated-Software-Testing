@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=10:mpiprocs=4:mem=20gb
+#PBS -P CSCI1166
+#PBS -q seriallong
+#PBS -l walltime=60:00:00
+#PBS -o /mnt/lustre/users/fredelinghuys/Package2_10/Package2_10.out
+#PBS -e /mnt/lustre/users/fredelinghuys/Package2_10/Package2_10.err
+#PBS -m abe
+#PBS -M cobus.redelinghuys@up.ac.za
+ulimit -s unlimited
+ 
+cd /mnt/lustre/users/fredelinghuys/Package2_10
+nproc=`cat $PBS_NODEFILE | wc -l`
+echo nproc is $nproc
+cat $PBS_NODEFILE
+ 
+# Run program
+module load chpc/python/3.7.0
+source visualizerenv/bin/activate
+module load chpc/java/17.0.2
+python3 multiplier.py
+make
+tar -cvf Package2_10.tar ./

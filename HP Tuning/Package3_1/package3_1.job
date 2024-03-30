@@ -1,0 +1,22 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=10:mpiprocs=4:mem=10gb
+#PBS -P CSCI1166
+#PBS -q serial
+#PBS -l walltime=1:30:00
+#PBS -o /mnt/lustre/users/fredelinghuys/Package3_1/Package3_1.out
+#PBS -e /mnt/lustre/users/fredelinghuys/Package3_1/Package3_1.err
+#PBS -m abe
+#PBS -M cobus.redelinghuys@up.ac.za
+ulimit -s unlimited
+ 
+cd /mnt/lustre/users/fredelinghuys/Package3_1
+nproc=`cat $PBS_NODEFILE | wc -l`
+echo nproc is $nproc
+cat $PBS_NODEFILE
+ 
+# Run program
+module load chpc/python/3.7.0
+source visualizerenv/bin/activate
+module load chpc/java/17.0.2
+java -jar GATLAM.jar
+tar -cvf Package3_1.tar ./
