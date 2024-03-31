@@ -1,0 +1,20 @@
+/var/spool/PBS/mom_priv/jobs/5387577.sched01.SC: line 19: visualizerenv/bin/activate: No such file or directory
+Unexpected character (e) at position 75.
+	at org.json.simple.parser.Yylex.yylex(Yylex.java:610)
+	at org.json.simple.parser.JSONParser.nextToken(JSONParser.java:269)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:118)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:92)
+	at InterpretorInstance.run(Interpretor.java:186)
+Unexpected character (e) at position 82.
+	at org.json.simple.parser.Yylex.yylex(Yylex.java:610)
+	at org.json.simple.parser.JSONParser.nextToken(JSONParser.java:269)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:118)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:92)
+	at InterpretorInstance.run(Interpretor.java:186)
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "org.json.simple.JSONObject.get(Object)" because "interpretorInstance.result" is null
+	at Interpretor.run(Interpretor.java:136)
+	at LinearRankSelection.selectChromosomes(Selection.java:210)
+	at GeneticAlgorithm.run(GeneticAlgorithm.java:26)
+	at App.main(App.java:15)
+make[1]: *** [main] Error 1
+tar: ./TCP.tar: file is the archive; not dumped
