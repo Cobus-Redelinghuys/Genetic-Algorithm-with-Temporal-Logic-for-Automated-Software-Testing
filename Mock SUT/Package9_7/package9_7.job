@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=10:mpiprocs=4:mem=20gb
+#PBS -P CSCI1166
+#PBS -q serial
+#PBS -l walltime=30:00:00
+#PBS -o /mnt/lustre/users/fredelinghuys/Package9_7/Package9_7.out
+#PBS -e /mnt/lustre/users/fredelinghuys/Package9_7/Package9_7.err
+#PBS -m abe
+#PBS -M cobus.redelinghuys@up.ac.za
+ulimit -s unlimited
+ 
+cd /mnt/lustre/users/fredelinghuys/Package9_7
+nproc=`cat $PBS_NODEFILE | wc -l`
+echo nproc is $nproc
+cat $PBS_NODEFILE
+ 
+# Run program
+module load chpc/python/3.7.0
+source visualizerenv/bin/activate
+module load chpc/java/17.0.2
+python3 multiplier.py
+make
+tar -cvf Package9_7.tar ./

@@ -1,0 +1,74 @@
+{
+    "modules": [
+        {
+            "moduleName": "Module1",
+            "enabled": false,
+            "relativePath": "/Module1/Module1",
+            "executionCommand": "",
+            "numberOfCLArguments": 1
+        },
+        {
+            "moduleName": "Module2",
+            "enabled": false,
+            "relativePath": "/Module2/Module2",
+            "executionCommand": "",
+            "numberOfCLArguments": 1
+        },
+        {
+            "moduleName": "Module3",
+            "enabled": false,
+            "relativePath": "/Module3/Module3",
+            "executionCommand": "",
+            "numberOfCLArguments": 1
+        },
+        {
+            "moduleName": "Module4",
+            "enabled": false,
+            "relativePath": "/Module4/Module4.jar",
+            "executionCommand": "java -jar ",
+            "numberOfCLArguments": 1
+        },
+        {
+            "moduleName": "Module5",
+            "enabled": false,
+            "relativePath": "/Module5/Module5.jar",
+            "executionCommand": "java -jar ",
+            "numberOfCLArguments": 1
+        },
+        {
+            "moduleName": "Module6",
+            "enabled": false,
+            "relativePath": "/Module6/Module6.jar",
+            "executionCommand": "java -jar ",
+            "numberOfCLArguments": 1
+        },
+        {
+            "moduleName": "Module7",
+            "enabled": false,
+            "relativePath": "/Module7/Module7.jar",
+            "executionCommand": "java -jar",
+            "numberOfCLArguments": 1
+        },
+        {
+            "moduleName": "Module8",
+            "enabled": false,
+            "relativePath": "/Module8/Module8.jar",
+            "executionCommand": "java -jar",
+            "numberOfCLArguments": 1
+        },
+        {
+            "moduleName": "Module9",
+            "enabled": false,
+            "relativePath": "/Module9/Module9.jar",
+            "executionCommand": "java -ea -jar",
+            "numberOfCLArguments": 1
+        },
+        {
+            "moduleName": "Module10",
+            "enabled": true,
+            "relativePath": "/Module10/Module10.jar",
+            "executionCommand": "java -jar",
+            "numberOfCLArguments": 1
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "Genes": [
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        }
+    ],
+    "FitnessFunction": {
+        "Safety": {
+            "enabled": true,
+            "weight": 0.5
+        },
+        "Livelyness": {
+            "enabled": true,
+            "weight": 0
+        },
+        "SegFault": {
+            "enabled": true,
+            "weight": 0.5
+        },
+        "Exceptions": {
+            "enabled": true,
+            "weight": 0.5
+        },
+        "ExecutionTime": {
+            "enabled": true,
+            "weight": 1.0,
+            "maxTime": 5000
+        },
+        "IllegalOutput": {
+            "enabled": true,
+            "weight": 0.5,
+            "words": []
+        },
+        "ExpectedOutput": {
+            "enabled": true,
+            "weight": 0.0,
+            "exactMatch": true,
+            "splittingChar": "\n"
+        }
+    },
+    "reproductionProp": 0.25,
+    "crossoverProp": 0.0,
+    "seed": 0,
+    "mutationType": "BitWiseInversion",
+    "selectionSize": 5,
+    "populationSize": 150,
+    "numGenerations": 25,
+    "crossOverType": "UniformedCrossOver",
+    "mutationProp": 1.0,
+    "nCrossOver": 5,
+    "tournamentSize": 2,
+    "numberOfContestants": 10,
+    "interpreterPath": "./Interpretor",
+    "interpretorExecutorName": "Temp.jar",
+    "interpreterCommand": "java -jar ",
+    "LTLWeight": 0.0,
+    "MWeight": 0.5,
+    "GWeight": 0.0,
+    "maxCrossOverAttempts": 10,
+    "maxMutationAttempts": 10,
+    "nMutation": 5,
+    "numberInterpreterInstances": 3,
+    "truncationSelectionPer": 0.75,
+    "selectionMethod": "LinearRankSelection"
+}

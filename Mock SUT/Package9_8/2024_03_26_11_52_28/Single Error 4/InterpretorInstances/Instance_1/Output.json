@@ -1,0 +1,1 @@
+{"results":[{"instructorExitCode":0,"studentExitCode":1,"studentErrOut":"Exception in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: Index -6 out of bounds for length 10\n\tat Main.main(Main.java:29)\n","instructorStdOut":"6\n","instructorExeTime":77,"studentStdOut":"","studentExeTime":73,"instructorErrOut":""}]}
