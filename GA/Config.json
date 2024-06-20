@@ -1,0 +1,80 @@
+{
+    "Genes": [
+        {
+            "minValue": -1,
+            "maxValue": 15,
+            "invalidValues": [
+            ]
+        },
+        {
+            "minValue": -1,
+            "maxValue": 15,
+            "invalidValues": [
+            ]
+        },
+        {
+            "minValue": -1,
+            "maxValue": 15,
+            "invalidValues": [
+            ]
+        }
+    ],
+    "FitnessFunction": {
+        "Safety" : {
+            "enabled" : true,
+            "weight" : 1
+        },
+        "Livelyness" : {
+            "enabled" : true,
+            "weight" : 1
+        },
+        "SegFault" : {
+            "enabled" : true,
+            "weight" : 1
+        },
+        "Exceptions" : {
+            "enabled" : true,
+            "weight" : 1
+        },
+        "ExecutionTime" : {
+            "enabled" : true,
+            "weight" : 1,
+            "maxTime" : 3000
+        },
+        "IllegalOutput": {
+            "enabled" : true,
+            "weight" : 1,
+            "words" : ["isosceles"]
+        },
+        "ExpectedOutput" : {
+            "enabled" : false,
+            "weight" : 1,
+            "exactMatch" : true,
+            "splittingChar" : "\n"
+        }
+    },
+    "reproductionProp":0.5,
+    "crossoverProp":0.5,
+    "seed":0,
+    "mutationType":"RandomInversion",
+    "selectionSize":10,
+    "populationSize":20,
+    "numGenerations":50,
+    "crossOverType":"UniformedCrossOver",
+    "mutationProp":0.5,
+    "nCrossOver":5,
+    "tournamentSize":5,
+    "numberOfContestants":5,
+    "interpreterPath" : "./Interpretor",
+    "interpretorExecutorName" : "Interpretor.jar",
+    "interpreterCommand" : "java -jar ",
+    "LTLWeight" : 0.5,
+    "MWeight" : 0.5,
+    "GWeight" : 0.5,
+    "maxCrossOverAttempts" : 100,
+    "maxMutationAttempts" : 100,
+    "nMutation":5,
+    "numberInterpreterInstances" : 5,
+    "truncationSelectionPer" : 0.75,
+    "selectionMethod" : "TruncationSelection"
+}
