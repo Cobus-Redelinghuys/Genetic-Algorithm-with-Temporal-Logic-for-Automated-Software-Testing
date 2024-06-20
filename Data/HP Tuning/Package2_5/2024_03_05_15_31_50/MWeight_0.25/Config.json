@@ -1,0 +1,112 @@
+{
+    "reproductionProp": 0.5,
+    "crossoverProp": 0.5,
+    "mutationType": "BitWiseInversion",
+    "populationSize": 50,
+    "numGenerations": 50,
+    "crossOverType": "OnePointCrossOver",
+    "mutationProp": 0.5,
+    "selectionMethod": "TournamentSelection",
+    "tournamentSize": 2,
+    "LTLWeight": 0.5,
+    "MWeight": 0.25,
+    "GWeight": 0.5,
+    "FitnessFunction": {
+        "Safety": {
+            "enabled": true,
+            "weight": 0.5
+        },
+        "Livelyness": {
+            "enabled": true,
+            "weight": 0.5
+        },
+        "SegFault": {
+            "enabled": true,
+            "weight": 0.5
+        },
+        "Exceptions": {
+            "enabled": true,
+            "weight": 0.5
+        },
+        "ExecutionTime": {
+            "enabled": true,
+            "weight": 0.5,
+            "maxTime": 5000
+        },
+        "IllegalOutput": {
+            "enabled": true,
+            "weight": 0.5,
+            "words": []
+        },
+        "ExpectedOutput": {
+            "enabled": true,
+            "weight": 0.5,
+            "exactMatch": true,
+            "splittingChar": "\n"
+        }
+    },
+    "Genes": [
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        },
+        {
+            "minValue": -15,
+            "maxValue": 15,
+            "invalidValues": []
+        }
+    ],
+    "seed": 0,
+    "selectionSize": 5,
+    "nCrossOver": 5,
+    "numberOfContestants": 10,
+    "interpreterPath": "./Interpretor",
+    "interpretorExecutorName": "Temp.jar",
+    "interpreterCommand": "java -jar ",
+    "maxCrossOverAttempts": 10,
+    "maxMutationAttempts": 10,
+    "nMutation": 5,
+    "numberInterpreterInstances": 3,
+    "truncationSelectionPer": 0.75
+}

@@ -1,0 +1,23 @@
+main:
+	make -C ./2024_02_27_18_14_42/Livelyness_0.75/ || true 
+	make -C ./2024_02_27_18_14_42/Livelyness_1.0/ || true 
+	make -C ./2024_02_27_18_14_42/SegFault_0.0/ || true 
+	make -C ./2024_02_27_18_14_42/SegFault_0.25/ || true 
+	make -C ./2024_02_27_18_14_42/SegFault_0.75/ || true 
+	make -C ./2024_02_27_18_14_42/SegFault_1.0/ || true 
+	make -C ./2024_02_27_18_14_42/Exceptions_0.0/ || true 
+	make -C ./2024_02_27_18_14_42/Exceptions_0.25/ || true 
+	make -C ./2024_02_27_18_14_42/Exceptions_0.75/ || true 
+	make -C ./2024_02_27_18_14_42/Exceptions_1.0/ || true 
+	make -C ./2024_02_27_18_14_42/ExecutionTime_0.0/ || true 
+	make -C ./2024_02_27_18_14_42/ExecutionTime_0.25/ || true 
+	make -C ./2024_02_27_18_14_42/ExecutionTime_0.75/ || true 
+	make -C ./2024_02_27_18_14_42/ExecutionTime_1.0/ || true 
+	make -C ./2024_02_27_18_14_42/IllegalOutput_0.0/ || true 
+	make -C ./2024_02_27_18_14_42/IllegalOutput_0.25/ || true 
+	make -C ./2024_02_27_18_14_42/IllegalOutput_0.75/ || true 
+	make -C ./2024_02_27_18_14_42/IllegalOutput_1.0/ || true 
+	make -C ./2024_02_27_18_14_42/ExpectedOutput_0.0/ || true 
+	make -C ./2024_02_27_18_14_42/ExpectedOutput_0.25/ || true 
+	make -C ./2024_02_27_18_14_42/ExpectedOutput_0.75/ || true 
+	make -C ./2024_02_27_18_14_42/ExpectedOutput_1.0/ || true 

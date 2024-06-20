@@ -1,0 +1,2 @@
+/var/spool/PBS/mom_priv/jobs/5475602.sched01.SC: line 19: visualizerenv/bin/activate: No such file or directory
+tar: ./TCP_Adv_Int_4.tar: file is the archive; not dumped

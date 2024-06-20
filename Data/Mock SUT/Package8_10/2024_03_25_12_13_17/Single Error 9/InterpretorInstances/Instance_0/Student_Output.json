@@ -1,0 +1,1 @@
+[{"duration":50,"stdout":"","moduleName":"Module9","exitvalue":0,"stderr":"Exception in thread \"Thread-1\" Exception in thread \"Thread-0\" java.lang.AssertionError: RaceCondition occurred\n\tat Number.run(Module9.java:36)\njava.lang.AssertionError: RaceCondition occurred\n\tat Number.run(Module9.java:36)\n"}]

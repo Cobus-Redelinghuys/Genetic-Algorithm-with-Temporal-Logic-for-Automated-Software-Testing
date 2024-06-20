@@ -1,0 +1,311 @@
+{
+  "ModuleConfigurations": {
+    "filePath": "./Interpretor/ModuleConfig.json",
+    "combinations":[
+      {
+        "Experiment ID": 79,
+        "Run name": "Single Error 1",
+        "Modules active": {
+          "Module1": true,
+          "Module2": false,
+          "Module3": false,
+          "Module4": false,
+          "Module5": false,
+          "Module6": false,
+          "Module7": false,
+          "Module8": false,
+          "Module9": false,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 80,
+        "Run name": "Single Error 2",
+        "Modules active": {
+          "Module1": false,
+          "Module2": true,
+          "Module3": false,
+          "Module4": false,
+          "Module5": false,
+          "Module6": false,
+          "Module7": false,
+          "Module8": false,
+          "Module9": false,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 81,
+        "Run name": "Single Error 3",
+        "Modules active": {
+          "Module1": false,
+          "Module2": false,
+          "Module3": true,
+          "Module4": false,
+          "Module5": false,
+          "Module6": false,
+          "Module7": false,
+          "Module8": false,
+          "Module9": false,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 82,
+        "Run name": "Single Error 4",
+        "Modules active": {
+          "Module1": false,
+          "Module2": false,
+          "Module3": false,
+          "Module4": true,
+          "Module5": false,
+          "Module6": false,
+          "Module7": false,
+          "Module8": false,
+          "Module9": false,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 83,
+        "Run name": "Single Error 5",
+        "Modules active": {
+          "Module1": false,
+          "Module2": false,
+          "Module3": false,
+          "Module4": false,
+          "Module5": true,
+          "Module6": false,
+          "Module7": false,
+          "Module8": false,
+          "Module9": false,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 84,
+        "Run name": "Single Error 6",
+        "Modules active": {
+          "Module1": false,
+          "Module2": false,
+          "Module3": false,
+          "Module4": false,
+          "Module5": false,
+          "Module6": true,
+          "Module7": false,
+          "Module8": false,
+          "Module9": false,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 85,
+        "Run name": "Single Error 7",
+        "Modules active": {
+          "Module1": false,
+          "Module2": false,
+          "Module3": false,
+          "Module4": false,
+          "Module5": false,
+          "Module6": false,
+          "Module7": true,
+          "Module8": false,
+          "Module9": false,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 86,
+        "Run name": "Single Error 8",
+        "Modules active": {
+          "Module1": false,
+          "Module2": false,
+          "Module3": false,
+          "Module4": false,
+          "Module5": false,
+          "Module6": false,
+          "Module7": false,
+          "Module8": true,
+          "Module9": false,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 87,
+        "Run name": "Single Error 9",
+        "Modules active": {
+          "Module1": false,
+          "Module2": false,
+          "Module3": false,
+          "Module4": false,
+          "Module5": false,
+          "Module6": false,
+          "Module7": false,
+          "Module8": false,
+          "Module9": true,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 88,
+        "Run name": "Single Error 10",
+        "Modules active": {
+          "Module1": false,
+          "Module2": false,
+          "Module3": false,
+          "Module4": false,
+          "Module5": false,
+          "Module6": false,
+          "Module7": false,
+          "Module8": false,
+          "Module9": false,
+          "Module10": true
+        }
+      },
+      {
+        "Experiment ID": 89,
+        "Run name": "Three Errors Set 1",
+        "Modules active": {
+          "Module1": true,
+          "Module2": false,
+          "Module3": false,
+          "Module4": true,
+          "Module5": false,
+          "Module6": false,
+          "Module7": true,
+          "Module8": false,
+          "Module9": false,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 90,
+        "Run name": "Three Errors Set 2",
+        "Modules active": {
+          "Module1": false,
+          "Module2": true,
+          "Module3": false,
+          "Module4": false,
+          "Module5": true,
+          "Module6": false,
+          "Module7": false,
+          "Module8": true,
+          "Module9": false,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 91,
+        "Run name": "Three Errors Set 3",
+        "Modules active": {
+          "Module1": false,
+          "Module2": false,
+          "Module3": true,
+          "Module4": false,
+          "Module5": false,
+          "Module6": true,
+          "Module7": false,
+          "Module8": false,
+          "Module9": false,
+          "Module10": true
+        }
+      },
+      {
+        "Experiment ID": 92,
+        "Run name": "Four Errors Set 1",
+        "Modules active": {
+          "Module1": true,
+          "Module2": false,
+          "Module3": false,
+          "Module4": true,
+          "Module5": false,
+          "Module6": false,
+          "Module7": true,
+          "Module8": false,
+          "Module9": true,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 93,
+        "Run name": "Four Errors Set 2",
+        "Modules active": {
+          "Module1": false,
+          "Module2": true,
+          "Module3": false,
+          "Module4": false,
+          "Module5": true,
+          "Module6": false,
+          "Module7": false,
+          "Module8": true,
+          "Module9": true,
+          "Module10": false
+        }
+      },
+      {
+        "Experiment ID": 94,
+        "Run name": "Four Errors Set 3",
+        "Modules active": {
+          "Module1": false,
+          "Module2": false,
+          "Module3": true,
+          "Module4": false,
+          "Module5": false,
+          "Module6": true,
+          "Module7": false,
+          "Module8": false,
+          "Module9": true,
+          "Module10": true
+        }
+      },
+      {
+        "Experiment ID": 95,
+        "Run name": "Ten Errors 1",
+        "Modules active": {
+          "Module1": true,
+          "Module2": true,
+          "Module3": true,
+          "Module4": true,
+          "Module5": true,
+          "Module6": true,
+          "Module7": true,
+          "Module8": true,
+          "Module9": true,
+          "Module10": true
+        }
+      },
+      {
+        "Experiment ID": 96,
+        "Run name": "Ten Errors 2",
+        "Modules active": {
+          "Module1": true,
+          "Module2": true,
+          "Module3": true,
+          "Module4": true,
+          "Module5": true,
+          "Module6": true,
+          "Module7": true,
+          "Module8": true,
+          "Module9": true,
+          "Module10": true
+        }
+      },
+      {
+        "Experiment ID": 97,
+        "Run name": "Ten Errors 3",
+        "Modules active": {
+          "Module1": true,
+          "Module2": true,
+          "Module3": true,
+          "Module4": true,
+          "Module5": true,
+          "Module6": true,
+          "Module7": true,
+          "Module8": true,
+          "Module9": true,
+          "Module10": true
+        }
+      }
+    ]
+  }
+}
